@@ -5,3 +5,14 @@ __pycache__/
 .env
 *.log
 
+# editor swap files
+*.swp
+*.swo
+*.swm
+*.swk
+*.swl
+*.swj
+*.swn
+*.sw?
+*~
+
