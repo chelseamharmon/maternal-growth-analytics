@@ -8,8 +8,6 @@ quantify business performance and patient outcomes.
 The system generates synthetic lifecycle data (1,000 patients, 10k+ engagement events) and implements production-style SQL analytics 
 queries to calculate funnel conversion, cohort retention, and operational KPIs.
 
----
-
 ## Business Context
 
 Healthcare growth teams must understand:
@@ -23,8 +21,6 @@ Healthcare growth teams must understand:
 This project simulates a real-world growth analytics workflow to answer those questions using a structured star schema and SQL-based KPI 
 modeling.
 
----
-
 ## Key Metrics Modeled
 
 - Lead → Enrollment conversion rate
@@ -34,8 +30,6 @@ modeling.
 - Channel-level performance
 - Engagement event frequency
 
----
-
 ## Tech Stack
 
 - PostgreSQL (relational database + star schema)
@@ -43,8 +37,6 @@ modeling.
 - Python (synthetic data generation + ETL)
 - SQLAlchemy
 - Pandas
-
----
 
 ## Project Structure
 
@@ -59,8 +51,6 @@ maternal-growth-analytics/
 ├── requirements.txt
 └── README.md
 ```
-
----
 
 ## Quickstart (Local)
 
@@ -89,8 +79,6 @@ python src/load_lifecycle_and_events.py
 psql -d maternal_growth -f sql/analytics/01_funnel_conversion_by_channel.sql
 psql -d maternal_growth -f sql/analytics/02_weekly_cohort_retention.sql
 ```
-
----
 
 ## Future Extensions
 
