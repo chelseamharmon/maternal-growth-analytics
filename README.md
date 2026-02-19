@@ -1,9 +1,12 @@
 # Maternal Growth & Retention Analytics
 
-End-to-end healthcare growth analytics simulation built with PostgreSQL, Python, and SQL.
+End-to-end healthcare growth analytics simulation built with PostgreSQL, Python, SQL 
+and Tableau.
 
 This project models how a maternal health startup tracks patient acquisition, enrollment conversion, engagement, and retention to 
 quantify business performance and patient outcomes.
+
+Designed to mirror workflows used by healthcare growth and product analytics teams.
 
 The system generates synthetic lifecycle data (1,000 patients, 10k+ engagement events) and implements production-style SQL analytics 
 queries to calculate funnel conversion, cohort retention, and operational KPIs.
@@ -21,10 +24,17 @@ Healthcare growth teams must understand:
 This project simulates a real-world growth analytics workflow to answer those questions using a structured star schema and SQL-based KPI 
 modeling.
 
+## Tech Stack
+
+- PostgreSQL (relational database + star schema)
+- SQL (analytics & KPI modeling)
+- Python (synthetic data generation + ETL)
+- SQLAlchemy
+- Pandas
+
 ## Dashboard Preview
 
 ![Dashboard](assets/dashboard_overview.png)
-
 
 ## Key Metrics Modeled
 
@@ -35,13 +45,13 @@ modeling.
 - Channel-level performance
 - Engagement event frequency
 
-## Tech Stack
+## Example Insights 
 
-- PostgreSQL (relational database + star schema)
-- SQL (analytics & KPI modeling)
-- Python (synthetic data generation + ETL)
-- SQLAlchemy
-- Pandas
+- Partner clinic and OB referral channels produced the highest enrollment conversion 
+rates.
+- Cohort retention diverged significantly after week 4, suggesting onboarding 
+quality differences.
+- Higher engagement frequency correlated with stronger long-term retention.
 
 ## Project Structure
 
@@ -91,7 +101,6 @@ psql -d maternal_growth -f sql/analytics/02_weekly_cohort_retention.sql
 - A/B test simulation framework
 - Churn prediction model
 - Marketing attribution modeling
-- Tableau dashboard integration
 
 ## Example Scale
 
