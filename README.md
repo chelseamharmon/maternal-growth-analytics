@@ -21,6 +21,11 @@ Healthcare growth teams must understand:
 This project simulates a real-world growth analytics workflow to answer those questions using a structured star schema and SQL-based KPI 
 modeling.
 
+## Dashboard Preview
+
+![Dashboard](assets/dashboard_overview.png)
+
+
 ## Key Metrics Modeled
 
 - Lead → Enrollment conversion rate
